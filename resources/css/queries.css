@@ -1,0 +1,189 @@
+
+
+/* big tablet to 1200px width greater than 1140px row*/
+@media only screen and (max-width: 1200px){
+    .hero-text-box{
+        width: 100%;
+        padding: 0 2%;
+       
+    }
+    .row{padding: 0 2%;width: 100%;}
+    
+}
+
+/* small tablet to big tableet: 768px to 1023px*/
+@media only screen and (max-width:1024px){
+     body{
+         font-size: 18px;
+
+     }
+     section{
+         padding: 60px 0;
+     }
+     .long-copy{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .steps-box:first-child{
+        
+        margin-top: 10px;
+    }
+
+    .steps{
+       
+        margin-top: 10px;
+    }
+    
+    .app-screen{
+        width: 50%;
+    }
+
+    .work-steps{
+        margin-bottom: 40px;
+     }
+     
+     .work-steps:last-of-type{
+         margin-bottom: 60px;
+     }
+     .icon-small{
+         width: 17px;
+         margin-right: 5px;
+     }
+     .citi-features{
+         font-size: 90%;
+     }
+     .plan-box{
+        width: 100%;
+        margin-left: 0%;
+     }
+     .plan-price{font-size: 250%;}
+     .contact-form{
+        width: 80%;
+     }
+     input[type=text],input[type=email],textarea,select{
+        width: 75%;
+     }
+     .scrolltop{
+         display: none;
+     }
+}
+/* small phone to small tablet 481px to 767*/
+@media only screen and (max-width:767px){
+    body{font-size: 16px;}
+    section{ padding:30px 0}
+    .hero-text-box,
+    .row{padding: 0 4%;}
+    .col{width: 100%;margin: 0 0 4% 0;}
+     
+
+    /* mobile nav bar */
+    /* .close-nav{display: none;} */
+    .open-close-nav{
+        float:right;
+        display: block;
+        color: #555;
+        font-size: 100px;
+        margin-top: 25px;
+        /* margin-right: -100px; */
+    }
+    .main-nav{display: none;}
+    .main-nav{float: left;margin-top: 30px;}
+    .mobile-nav-icon{ color:#fff;font-size:60px;display: block;}
+    
+     
+    .main-nav li {display: block;border: 0;padding: 10px;} 
+
+     .sticky .main-nav{margin-top: 15px;margin-left: 20px;}
+    
+    .sticky .mobile-nav-icon{ color:#555;font-size:40px;float:right;cursor: pointer; margin-top: 25px;} 
+     .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {padding:14px 0;} 
+
+    .mobile-close{
+        float:right;
+        display: none;
+        color: #fff;
+        font-size: 100px;
+        margin-top: 25px;
+        margin-right: -100px;
+    }
+
+
+    /* sections */
+    .long-copy{
+        width: 100%;
+        margin-left: 0%;
+    }
+    h1{font-size:180%}
+    h2{ font-size:140% }
+    .steps-box:first-child{ margin-top: 5px;text-align: center;}
+    .steps{margin-top: 5px;}
+    .work-steps{
+        margin-bottom: 30px;
+     }
+     
+     .work-steps:last-of-type{ margin-bottom: 40px;}
+     .app-screen{width: 30%;}
+     .work-steps div{
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding: 2px;
+        font-size: 111%;
+     }
+     .btn-app img {
+        height: 40px;
+        margin-right: 10px;
+     }
+     .btn-app:first-of-type{
+        margin-left: 60px;
+     }
+}
+
+
+/* small phone: from 0 to 480px */
+
+@media only screen and (max-width:480px){
+    body{font-size: 15px;}
+        .contact-form{
+            width: 100%;
+        }
+        .hero-text-box, .row {
+            padding: 0% 1% ;
+            }
+            h1{
+                font-size: 180%;
+            }
+            .btn-full:link {
+                
+                margin-right: 13px;
+            }
+
+            .logo{
+                height: 50px;
+            }
+        .btn-app img {
+            height: 30px;
+        }
+
+        input[type=text],input[type=email],textarea,select{
+            width: 100%;
+         }
+         .work-steps div{
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            padding: 1px;
+            font-size: 108%;
+            margin-right: 9px;
+         }
+         .steps{
+            padding-right: 0%;
+         }
+         .work-steps:last-of-type {margin-bottom: 25px;}
+        .btn-app:first-of-type {margin-left: 40px;}
+         .footer-nav{float: none;text-align: center;}
+         .footer-nav-right{ margin-top: 20px;} 
+         footer p{ padding: 10px;}
+}
