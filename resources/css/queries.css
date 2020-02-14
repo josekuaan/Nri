@@ -141,6 +141,11 @@
      }
 }
 
+@media only screen and (max-width:590px){
+.footer-nav-left{
+    font-size: 94%;
+}
+}
 
 /* small phone: from 0 to 480px */
 
@@ -183,7 +188,11 @@
          }
          .work-steps:last-of-type {margin-bottom: 25px;}
         .btn-app:first-of-type {margin-left: 40px;}
-         .footer-nav{float: none;text-align: center;}
+        .footer-content{
+            display: flex;
+            flex-wrap: wrap;
+        }
+         .footer-nav{display: flex;justify-content: center;float:none}
          .footer-nav-right{ margin-top: 20px;} 
          footer p{ padding: 10px;}
 }

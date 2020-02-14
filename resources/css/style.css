@@ -537,10 +537,15 @@ footer{
     padding: 20px;
     font-size: 80%;
 }
+.footer-content{
+    display: flex;
+}
+.social-network{
+    position:relative;
+    text-align: right;
+}
 .footer-nav-left{
-    float: left;
-    list-style: none;
-    /* margin-top: 20px; */
+    display: flex;
 
 }
 .footer-nav li{
@@ -555,61 +560,84 @@ footer{
     color: rgb(196, 194, 194);
 
 }
-.footer-nav-right{
-    float: right;
+.footer-nav{
     list-style: none;
-    /* margin-top: 20px; */
-
 }
 .footer-nav-right li a:link,
 .footer-nav-right li a:visited{
     font-size: 100% ;
     
 }
-.logo-facebook,
-.logo-instagram,
-.logo-twitter,
-.logo-youtube{
+
+.btn-media{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    color: #f1f1f1;
+    margin: 0 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    overflow: hidden;
+    position: relative;
+    line-height: 30px;
+    text-align: center;
+    font-size: 15px;
+    background-color: #f1f1f1f1;
+}
+.btn-media a >  .btn-social {
+  transition: 0.2s linear;
+  color: #0984e3;
+}
+.btn-media a > .btn-social:hover {
+    transform: scale(1.3);
+    color: #f1f1f1f1;
+  }
+  .btn-media::before{
+    content: " ";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background-color: #0984e3;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+  }
+
+  .btn-media:hover::before{
+      animation: swing 1.7s 1;
+      top: -10%;
+      left: -10%;
+  }
+
+  @keyframes swing {
+      0%{
+        left: -110%;
+        top: 90%;
+      }50%{
+        left: 10%;
+        top: -30%;
+
+      }100%{
+        top: -10%;
+        left: -10%;
+      }
+  }
+.btn-media{
     -webkit-transition: color 0.3s, font-size 1s;
     transition: color 0.3s, font-size 1s;
 }
-.logo-facebook:hover{
-   color:#3b5998;
-   font-size: 120% ;
-}
-.logo-instagram:hover{
-  color:#517fa4;
-  font-size: 120% ;
-}
 
-.logo-twitter:hover{
-    color:#00aced;
-    font-size: 120% ;
-}
-
-.logo-youtube:hover{
-    color:#dd4b39;
-    font-size: 120% ;
-}
 .footer-nav-right li a:link,
 .footer-nav-right li a:visited,
 .footer-nav-right li a:link,
 .footer-nav-left li  a:visited{
      color: rgb(196, 194, 194);
-     -webkit-transition: color 0.3s;
      transition: color 0.3s;
 }
 
 .footer-nav li a:hover,
 .footer-nav li a:active {
     color: rgb(223, 221, 221);
-    
-}
-
-.footer-nav li {
-    /* margin-left: 10px; */
-    display: inline-block;
-    color: #fff;
     
 }
 
@@ -622,10 +650,6 @@ footer p {
     text-align: center;
     color: #888;
     padding: 20px;
-}
-
-.social-network{
-    position:relative;
 }
 
 .scrolltop{
