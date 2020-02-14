@@ -629,13 +629,19 @@ footer p {
 }
 
 .scrolltop{
-    top: 30px;
-    width: 8%;
+    bottom: 27px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
     padding: 12px;
     background: #fff;
-    right: -70px;
-    position: absolute;
+    right: 5px;
+    position: fixed;
     border-radius: 50%;
+    background-color: rgb(230, 126, 34);
+    box-shadow: rgb(0, 0, 0) 2px 2px 2px;
+    color: #fff;
 }
 
 /*********************/
@@ -661,3 +667,8 @@ footer p {
 .js--wp-3.animated{
     opacity: 1;
 }
+
+.scrolltop{
+    display: none;
+}
+

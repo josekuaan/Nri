@@ -28,6 +28,22 @@
 </head>
 
 <body>
+    <script>
+        // Ensure that the browser supports the service worker API 
+if (navigator.serviceWorker) { 
+  // Start registration process on every page load 
+  window.addEventListener('load', () => { 
+      navigator.serviceWorker 
+          // The register function takes as argument 
+          // the file path to the worker's file 
+          .register('/service_worker.js') 
+          // Gives us registration object 
+          .then(reg => console.log('Service Worker Registered', reg)) 
+          .catch(swErr => console.log( 
+                `Service Worker Installation Error: ${swErr}`)); 
+    }); 
+} 
+</script>
     <header>
         <nav>
             <div class="row">
@@ -447,10 +463,9 @@
 <script src="/vendors/js/jquery.waypoints.min.js"></script>
 <script src="/resources/js/script.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <!--[if (gte IE 6)&(lte IE 8)]>
-  <script type="text/javascript" src="selectivizr.js"></script>
-  <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
-<![endif]-->
+    <script src =  
+    "https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js" > 
+            </script>
 </body>
 
 </html>

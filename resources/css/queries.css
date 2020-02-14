@@ -89,7 +89,7 @@
     }
     .main-nav{display: none;}
     .main-nav{float: left;margin-top: 30px;}
-    .mobile-nav-icon{ color:#fff;font-size:60px;display: block;}
+    .mobile-nav-icon{ color:#fff;font-size: 40px;display: block;}
     
      
     .main-nav li {display: block;border: 0;padding: 10px;} 

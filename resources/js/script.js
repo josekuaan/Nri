@@ -12,16 +12,6 @@ $(document).ready(function(){
     offset:'60px'
 })
 
-// $('footer').waypoint(function(direction){
-//     if(direction == "up"){
-//        $('.social-network > div').addClass('scrolltop')
-//     }else{
-//         $('.social-network > div').removeClass('scrolltop')
-//     }
-// }, {
-// offset:'60px'
-// })
-
 /*  scroll top */
 $('.js--scroll-to-plan').click(function(){
     $('html,body').animate({scrollTop:$('.js--now-on-plan').offset().top}, 3000)
@@ -36,6 +26,13 @@ $('.js--scroll-to-features').click(function(){
     $('html,body').animate({scrollTop:$('.js--section-features').offset().top}, 2000)
 })
 
+$(window).scroll(function(){
+  if($(this).scrollTop() > 40 ){
+    $('.scrolltop').fadeIn()
+  }else{
+    $('.scrolltop').fadeOut()
+  }
+})
 $('.scrolltop').click(function(){
 
     $('html,body').animate({scrollTop:0}, 2000)
@@ -113,7 +110,7 @@ $('.mobile-nav-icon').click(function(){
         icon.addClass('icon ion-md-close')
         icon.removeClass('icon ion-md-menu')
     }else{
-      console.log("ok")
+      
         icon.removeClass('icon ion-md-close')
         icon.addClass('icon ion-md-menu')
         
@@ -121,6 +118,5 @@ $('.mobile-nav-icon').click(function(){
    
      
 })
-
 
 })
